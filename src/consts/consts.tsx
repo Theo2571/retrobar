@@ -1,3 +1,23 @@
 const API = "API";
+const ADMIN_AUTH_PAGE = "/admin";
+const ADMIN_PHOTO_PAGE = "/admin/photo";
+const ADMIN_VIDEO_PAGE = "/admin/video";
+const ADMIN_ADVERTISING_PAGE = "/admin/advertising";
+const ADMIN_POSTER_PAGE = "/admin/poster";
+const ADMIN_INSTITUTION_PAGE = "/admin/institution";
+const ADMIN_CONTACTS_PAGE = "/admin/contacts";
+const ADMIN_EDIT_PAGE = "/admin/edit";
+const MAIN_PAGE = "/";
 
-export {API}
+export {
+  API,
+  ADMIN_ADVERTISING_PAGE,
+  ADMIN_AUTH_PAGE,
+  ADMIN_CONTACTS_PAGE,
+  ADMIN_EDIT_PAGE,
+  ADMIN_INSTITUTION_PAGE,
+  ADMIN_PHOTO_PAGE,
+  ADMIN_POSTER_PAGE,
+  ADMIN_VIDEO_PAGE,
+  MAIN_PAGE,
+}
