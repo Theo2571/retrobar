@@ -1,3 +1,4 @@
+import { useId } from "react";
 import { Route, Routes } from "react-router-dom";
 import {
   ADMIN_ADVERTISING_PAGE,
@@ -10,21 +11,51 @@ import {
   ADMIN_VIDEO_PAGE,
   MAIN_PAGE,
 } from "../consts/consts";
+import AdminAdvertisinPage from "../pages/AdminAdvertisingPage/AdminAdvertisinPage";
 
 import AdminAuthPage from "../pages/AdminAuthPage/AdminAuthPage"
+import AdminContactsPage from "../pages/AdminContactsPage/AdminContactsPage";
+import AdminEditPage from "../pages/AdminEditPage/AdminEditPage";
+import AdminInstitutionPage from "../pages/AdminInstitutionPage/AdminInstitutionPage";
 import AdminPhotoPage from "../pages/AdminPhotoPage/AdminPhotoPage";
+import AdminVideoPage from "../pages/AdminVideoPage/AdminVideoPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     {
       path: ADMIN_AUTH_PAGE,
       Component: <AdminAuthPage />,
-      id: 1,
+      id: useId(),
     },
     {
       path: ADMIN_PHOTO_PAGE,
       Component: <AdminPhotoPage />,
-      id: 2,
+      id: useId(),
+    },    
+    {
+      path: ADMIN_VIDEO_PAGE,
+      Component: <AdminVideoPage />,
+      id: useId(),
+    },
+    {
+      path: ADMIN_ADVERTISING_PAGE,
+      Component: <AdminAdvertisinPage />,
+      id: useId(),
+    },
+    {
+      path: ADMIN_INSTITUTION_PAGE,
+      Component: <AdminInstitutionPage />,
+      id: useId(),
+    },
+    {
+      path: ADMIN_CONTACTS_PAGE,
+      Component: <AdminContactsPage />,
+      id: useId(),
+    },
+    {
+      path: ADMIN_EDIT_PAGE,
+      Component: <AdminEditPage />,
+      id: useId(),
     },
   ];
 
