@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import logo from '../../assets/icons/logo.svg'
 import search from '../../assets/icons/search.svg'
+import star from '../../assets/icons/bigstarburger.svg'
 import {NavLink} from "react-router-dom";
 import styles from './Header.module.scss'
 import SearchInput from "./components/SearchInput/SearchInput";
 import {FcMenu} from "react-icons/all";
 import HamburgerMenu from "./components/HamburgerMenu";
+
 
 
 const data = [
@@ -58,6 +60,7 @@ const Header = () => {
                             <SearchInput open={open}/>
                         </button>
                         <HamburgerMenu />
+                        <img className={styles.star} src={star} alt="star"/>
                     </nav>
                 </div>
             </div>

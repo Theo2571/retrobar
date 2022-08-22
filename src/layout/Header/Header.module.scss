@@ -24,7 +24,6 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    padding: 12px 20px;
     border-bottom: 1px solid #fff;
   }
 
@@ -62,6 +61,12 @@
       border-right: 1px solid #EBEBEB;
       border-left: 1px solid #EBEBEB;
     }
+
+    .star {
+      position: absolute;
+      right: 0;
+      top: -1%;
+    }
   }
 }
 
@@ -85,7 +90,11 @@
   }
 }
 
-
+@media screen and (min-width: 376px){
+  .star {
+    display: none;
+  }
+}
 
 
 
