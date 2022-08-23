@@ -1,8 +1,8 @@
 import React from 'react';
-import {placeData} from "../../../types/types";
+import {PlaceData} from "../../../types/types";
 import styles from "./PlaceCard.module.scss"
 
-const PlaceCard = ({data}: { data: placeData }) => {
+const PlaceCard = ({data}: { data: PlaceData }) => {
 
 
     return (
