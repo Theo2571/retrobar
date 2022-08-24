@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {Swiper, SwiperSlide} from "swiper/react";
 import photo1 from '../../assets/icons/slider/photo1.png'
 import photo2 from '../../assets/icons/slider/photo2.png'
@@ -15,35 +17,36 @@ import styles from './Swiper.module.scss'
 // import required modules
 import {EffectCoverflow, Pagination} from "swiper";
 
-const data = [
-    {
-        image: photo2,
-        title: 'ZEPPELIN BAR',
-        text: 'STREET CREDIBILITY',
-        date: 'Суббота 14 мая'
-    },
-    {
-        image: photo1,
-        title: 'ZEPPELIN BAR',
-        text: 'STREET CREDIBILITY',
-        date: 'Суббота 14 мая'
-    },
-    {
-        image: photo3,
-        title: 'ZEPPELIN BAR',
-        text: 'STREET CREDIBILITY',
-        date: 'Суббота 14 мая'
-    },
-    {
-        image: photo4,
-        title: 'ZEPPELIN BAR',
-        text: 'STREET CREDIBILITY',
-        date: 'Суббота 14 мая'
-    },
+const PhotoSlider = () => {
 
-]
+    const data = [
+        {
+            image: photo2,
+            title: 'ZEPPELIN BAR',
+            text: 'STREET CREDIBILITY',
+            date: 'Суббота 14 мая'
+        },
+        {
+            image: photo1,
+            title: 'ZEPPELIN BAR',
+            text: 'STREET CREDIBILITY',
+            date: 'Суббота 14 мая'
+        },
+        {
+            image: photo3,
+            title: 'ZEPPELIN BAR',
+            text: 'STREET CREDIBILITY',
+            date: 'Суббота 14 мая'
+        },
+        {
+            image: photo4,
+            title: 'ZEPPELIN BAR',
+            text: 'STREET CREDIBILITY',
+            date: 'Суббота 14 мая'
+        },
 
-export default function App() {
+    ]
+
     return (
             <Swiper
                 loop={true}
@@ -84,6 +87,6 @@ export default function App() {
                 }
             </Swiper>
     );
-}
+};
 
-
+export default PhotoSlider;

@@ -9,23 +9,37 @@ import {
   ADMIN_POSTER_PAGE,
   ADMIN_VIDEO_PAGE,
   MAIN_PAGE,
+  PHOTO_PAGE,
 } from "../consts/consts";
 
 import AdminAuthPage from "../pages/AdminAuthPage/AdminAuthPage"
 import AdminPhotoPage from "../pages/AdminPhotoPage/AdminPhotoPage";
+import PhotoPage from "../pages/PhotoPage/PhotoPage";
+import {useId} from "react";
+import MainPage from "../pages/MainPage/MainPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     {
       path: ADMIN_AUTH_PAGE,
       Component: <AdminAuthPage />,
-      id: 1,
+      id: useId(),
     },
     {
       path: ADMIN_PHOTO_PAGE,
       Component: <AdminPhotoPage />,
-      id: 2,
+      id: useId(),
     },
+    {
+      path: PHOTO_PAGE,
+      Component: <PhotoPage />,
+      id: useId(),
+    },
+    {
+      path: MAIN_PAGE,
+      Component: <MainPage />,
+      id: useId(),
+    }
   ];
 
   return (
