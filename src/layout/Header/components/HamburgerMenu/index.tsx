@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import styles from './styles.module.scss';
 import classNames from 'classnames';
 import HamburgerIcon from './HamburgerIcon';
-import SearchInput from "../SearchInput/SearchInput";
+import SearchInput from "../../../SearchInput/SearchInput";
 import telegram from '../../../../assets/icons/telegram.svg'
 import instagram from '../../../../assets/icons/instagram.svg'
 import youtube from '../../../../assets/icons/youtube.svg'
@@ -50,7 +50,7 @@ function HamburgerMenu() {
             >
                 <div>
                     <div className={styles.search__input}>
-                        <SearchInput open={true} />
+                        <SearchInput open={true} placeholder={'поиск'} width={'271px'} />
                     </div>
                     <ul className={styles.menu__list}>
                         {data.map(item => (

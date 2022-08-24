@@ -1,5 +1,6 @@
 .hamburger {
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .menu {
@@ -29,7 +30,9 @@
 }
 
 .search__input {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu__list {
