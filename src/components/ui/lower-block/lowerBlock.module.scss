@@ -1,0 +1,13 @@
+.lower_block {
+  position: relative;
+  padding: 170px 0;
+
+  &__emoji {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  &__arrow {
+    cursor: pointer;
+  }
+}

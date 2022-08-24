@@ -10,23 +10,31 @@ import {
   ADMIN_POSTER_PAGE,
   ADMIN_VIDEO_PAGE,
   MAIN_PAGE,
+  PHOTO_PAGE,
 } from "../consts/consts";
-import AdminAdvertisinPage from "../pages/AdminAdvertisingPage/AdminAdvertisinPage";
 
+import AdminAdvertisinPage from "../pages/AdminAdvertisingPage/AdminAdvertisinPage";
 import AdminAuthPage from "../pages/AdminAuthPage/AdminAuthPage"
 import AdminContactsPage from "../pages/AdminContactsPage/AdminContactsPage";
 import AdminEditPage from "../pages/AdminEditPage/AdminEditPage";
 import AdminInstitutionPage from "../pages/AdminInstitutionPage/AdminInstitutionPage";
 import AdminPhotoPage from "../pages/AdminPhotoPage/AdminPhotoPage";
 import AdminVideoPage from "../pages/AdminVideoPage/AdminVideoPage";
+import PhotoPage from "../pages/PhotoPage/PhotoPage";
 
 const MainRoutes = () => {
+
   const PUBLIC_ROUTES = [
     {
       path: MAIN_PAGE,
       Component: <></>,
       id: useId(),
-    }
+    },
+    {
+      path: PHOTO_PAGE,
+      Component: <PhotoPage />,
+      id: useId(),
+    },
   ];
 
   const PRIVATE_ROUTES = [
