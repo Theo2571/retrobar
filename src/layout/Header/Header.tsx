@@ -12,7 +12,7 @@ import HamburgerMenu from "./components/HamburgerMenu";
 
 const data = [
     {
-        path: '/',
+        path: '/photo',
         label: 'Фото'
     },
     {
