@@ -23,6 +23,14 @@ import AdminVideoPage from "../pages/AdminVideoPage/AdminVideoPage";
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     {
+      path: MAIN_PAGE,
+      Component: <></>,
+      id: useId(),
+    }
+  ];
+
+  const PRIVATE_ROUTES = [
+    {
       path: ADMIN_AUTH_PAGE,
       Component: <AdminAuthPage />,
       id: useId(),
@@ -57,11 +65,16 @@ const MainRoutes = () => {
       Component: <AdminEditPage />,
       id: useId(),
     },
-  ];
+  ]
+
+  const isAdmin = true;
 
   return (
     <>
       <Routes>
+        {isAdmin && PRIVATE_ROUTES.map((item) => (
+          <Route path={item.path} element={item.Component} key={item.id} />
+        ))}
         {PUBLIC_ROUTES.map((item) => (
           <Route path={item.path} element={item.Component} key={item.id} />
         ))}
