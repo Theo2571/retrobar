@@ -5,7 +5,9 @@ import TitleForPages from "../../components/ui/title-for-pages/titleForPages";
 import PhotoGrid from "../../components/Photo/PhotoGrid/PhotoGrid";
 
 
+
 const PhotoPage = () => {
+
     return (
         <div className={styles.container}>
             <TitleForPages title={'Актуальные фотоотчеты'}/>

@@ -60,6 +60,7 @@ const PhotoGrid = () => {
             <div className="grid_item grid_item_advertising_2">
                 <SecondAdBlock data={adDataSecond}/>
             </div>
+
         </div>
 
     );
