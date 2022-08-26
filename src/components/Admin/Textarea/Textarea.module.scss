@@ -1,0 +1,31 @@
+.textareaWrapper {
+  margin-bottom: 1%;
+}
+
+.textareaTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0px 0 10px;
+}
+
+.textarea {
+  color: #fff;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #737373;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-bottom: 40px;
+  resize: none;
+  overflow: none;
+  height: 26px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.textarea:focus {
+  outline: none;
+}

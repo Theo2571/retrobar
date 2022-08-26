@@ -1,0 +1,60 @@
+.viewsInputWrapper {
+  width: 100%;
+}
+
+.viewsInputTitle {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 17px 0;
+}
+
+.viewsInputValues {
+  display: flex;
+  justify-content: space-around;
+  margin: 7px 0;
+}
+
+.viewsInputValueActive {
+  margin: 0;
+  font-size: 20px;
+  color: #FFB03B;
+  cursor: pointer;
+  transition: all .2s;
+  font-weight: 500;
+}
+
+.viewsInputValue {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.viewsInputValue:hover {
+  color: #FFB03B;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.viewsInput {
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  height: 4px;
+  border-radius: 10px;
+
+  &::-webkit-slider-thumb {
+    background: #FFB03B;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    -webkit-appearance: none;
+    border-radius: 10px;
+  }
+}
