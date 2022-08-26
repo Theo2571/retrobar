@@ -4,10 +4,15 @@
 
 .adminNavbar {
   width: 16%;
+  min-height: 100vh;
+  height: 50vh;
   background-color: #2F2F2F;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
 
 
   &List {
@@ -34,7 +39,10 @@
     text-decoration: none;
     margin-bottom: 10px;
     font-size: 18px;
-    filter: brightness(0) saturate(100%) invert(87%) sepia(27%) saturate(4016%) hue-rotate(328deg) brightness(103%) contrast(102%);
+
+    & img {
+      filter: brightness(0) saturate(100%) invert(87%) sepia(27%) saturate(4016%) hue-rotate(328deg) brightness(103%) contrast(102%);
+    }
   }
 }
 

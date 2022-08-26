@@ -1,0 +1,27 @@
+.phoneInputs:first-child {
+  margin-top: 5%;
+}
+
+.phoneInputs {
+  margin-bottom: 1%;
+}
+
+.phoneInputsTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0px 0 10px;
+}
+
+.phoneInput {
+  color: #fff;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #737373;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.phoneInput:focus {
+  outline: none;
+}

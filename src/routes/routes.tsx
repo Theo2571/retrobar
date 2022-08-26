@@ -19,6 +19,7 @@ import AdminContactsPage from "../pages/AdminContactsPage/AdminContactsPage";
 import AdminEditPage from "../pages/AdminEditPage/AdminEditPage";
 import AdminInstitutionPage from "../pages/AdminInstitutionPage/AdminInstitutionPage";
 import AdminPhotoPage from "../pages/AdminPhotoPage/AdminPhotoPage";
+import AdminPosterPage from "../pages/AdminPosterPage/AdminPosterPage";
 import AdminVideoPage from "../pages/AdminVideoPage/AdminVideoPage";
 import PhotoPage from "../pages/PhotoPage/PhotoPage";
 
@@ -71,6 +72,11 @@ const MainRoutes = () => {
     {
       path: ADMIN_EDIT_PAGE,
       Component: <AdminEditPage />,
+      id: useId(),
+    },
+    {
+      path: ADMIN_POSTER_PAGE,
+      Component: <AdminPosterPage />,
       id: useId(),
     },
   ]
