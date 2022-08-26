@@ -1,23 +1,25 @@
 import React from 'react';
 
 import {Swiper, SwiperSlide} from "swiper/react";
-import photo1 from '../../assets/icons/slider/photo1.png'
-import photo2 from '../../assets/icons/slider/photo2.png'
-import photo3 from '../../assets/icons/slider/photo3.png'
-import photo4 from '../../assets/icons/slider/photo4.png'
-import frame from '../../assets/icons/slider/frame.png'
+import photo1 from '../../../assets/icons/slider/photo1.png'
+import photo2 from '../../../assets/icons/slider/photo2.png'
+import photo3 from '../../../assets/icons/slider/photo3.png'
+import photo4 from '../../../assets/icons/slider/photo4.png'
+import frame from '../../../assets/icons/slider/frame.png'
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import './swiper.css'
-import styles from './Swiper.module.scss'
+import './PhotoSlider.scss'
+import styles from './PhotoSlider.module.scss'
 
 // import required modules
 import {EffectCoverflow, Pagination} from "swiper";
 
 const PhotoSlider = () => {
+
+
 
     const data = [
         {
@@ -47,6 +49,13 @@ const PhotoSlider = () => {
 
     ]
 
+    const pagination = {
+        clickable: true,
+        renderBullet: function (index: number, className: string) {
+            return '<span class="' + className + '">' + "0" + (index + 1) + "</span>";
+        },
+    };
+
     return (
             <Swiper
                 loop={true}
@@ -54,7 +63,9 @@ const PhotoSlider = () => {
                 effect={"coverflow"}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={"auto"}
+                slidesPerView={
+                    window.innerWidth <= 1250 ? 2 : window.innerWidth <= 1000 ? 2 : 3
+                }
                 coverflowEffect={{
                     rotate: 50,
                     stretch: 0,
@@ -62,7 +73,7 @@ const PhotoSlider = () => {
                     modifier: 1,
                     slideShadows: false,
                 }}
-                pagination={false}
+                pagination={pagination}
                 modules={[EffectCoverflow, Pagination]}
                 className={styles.mySwiper}
             >

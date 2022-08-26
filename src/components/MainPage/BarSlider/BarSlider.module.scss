@@ -1,0 +1,85 @@
+.swiper_parent{
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider {
+  position: relative;
+  margin: 20px auto;
+
+  &__about {
+    position: absolute;
+    top: 49px;
+    left: 9px;
+
+    &__txt {
+      position: relative;
+    }
+
+    &__bgi {
+      position: absolute;
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 60%;
+      left: 14%;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 26px;
+      color: #FFFFFF;
+    }
+
+    &__time {
+      display: flex;
+      gap: 7px;
+      position: absolute;
+      bottom: 40%;
+      left: 13.5%;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+
+    &__phone {
+      display: flex;
+      gap: 7px;
+      position: absolute;
+      bottom: 31%;
+      left: 13.5%;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+
+    &__geotag {
+      display: flex;
+      gap: 7px;
+      position: absolute;
+      bottom: 10%;
+      left: 13.5%;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+
+    &__img {
+      position: absolute;
+      left: 308px;
+    }
+
+    &__text {
+      position: absolute;
+      bottom: -113px;
+      left: 15px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 23px;
+      color: #000000;
+    }
+  }
+}

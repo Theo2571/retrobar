@@ -51,8 +51,8 @@ const Header = () => {
                         </a>
                     </div>
                     <nav className={styles.menu}>
-                        {data.map((item) => (
-                            <NavLink to={item.path}
+                        {data.map((item, index) => (
+                            <NavLink key={index} to={item.path}
                                      className={({isActive}) => isActive ? styles.menu__link__active : styles.menu__link}>{item.label}</NavLink>
                         ))}
                         <button className={styles.menu__btn}>
