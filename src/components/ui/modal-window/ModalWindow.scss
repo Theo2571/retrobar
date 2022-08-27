@@ -74,15 +74,6 @@
     background-size: cover;
     overflow: hidden;
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 30px;
-      right: 20px;
-      width: 131px;
-      height: 36px;
-      background: url('../../../assets/icons/logo.svg') no-repeat;
-    }
   }
 
   &_footer {

@@ -10,12 +10,14 @@ import {
   ADMIN_VIDEO_PAGE,
   MAIN_PAGE,
   PHOTO_PAGE,
+  VIDEO_PAGE,
 } from "../consts/consts";
 
 import AdminAuthPage from "../pages/AdminAuthPage/AdminAuthPage"
 import AdminPhotoPage from "../pages/AdminPhotoPage/AdminPhotoPage";
 import PhotoPage from "../pages/PhotoPage/PhotoPage";
 import {useId} from "react";
+import VideoPage from "../pages/VideoPage/VideoPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -32,6 +34,11 @@ const MainRoutes = () => {
     {
       path: PHOTO_PAGE,
       Component: <PhotoPage />,
+      id: useId(),
+    },
+    {
+      path: VIDEO_PAGE,
+      Component: <VideoPage />,
       id: useId(),
     }
   ];

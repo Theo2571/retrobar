@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './ModalWindow.scss'
 import {PlaceData} from "../../../types/types";
-import Carousel from "../carousel/Carousel";
+import Carousel from "../carousel-photos/Carousel";
 
 const ModalWindow = ({active , setActive, data}: {
     active: boolean,
