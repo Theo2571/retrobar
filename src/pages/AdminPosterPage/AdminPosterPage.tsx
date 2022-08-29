@@ -10,7 +10,7 @@ import BannerInput from '../../components/Admin/BannerInput/BannerInput';
 
 const AdminPosterPage = () => {
 
-  const title = "Реклама/";
+  const title = "Реклама";
   const addFileTitle = "Добавить баннер";
 
   return (
@@ -19,7 +19,7 @@ const AdminPosterPage = () => {
       <div className={styles.advertising_content}>
         <div className={styles.content_fileInput}>
           <div className={styles.fileInputTitleWrapper}>
-            <Link to={ADMIN_ADVERTISING_PAGE} className={styles.fileInputTitle}>{title} <Link to={ADMIN_POSTER_PAGE} className={styles.fileInputTitle2}>Афиша</Link></Link>
+            <Link to={ADMIN_ADVERTISING_PAGE} className={styles.fileInputTitle}>{title} <Link to={ADMIN_POSTER_PAGE} className={styles.fileInputTitle2}>/ Афиша</Link></Link>
           </div>
           <BannerInput title={title} fileIcon={fileIcon} addFileTitle={addFileTitle} />
           <div className={styles.FileInputLinkWrapper}>

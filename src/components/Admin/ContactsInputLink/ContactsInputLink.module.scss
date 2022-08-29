@@ -1,20 +1,20 @@
-.fileInputLinkWrapper {
+.contactsInputLinkWrapper {
   color: white;
   font-size: 22px;
-  margin: 0 0 0 17px ;
+  margin: 0;
 }
 
-.fileInputLinkWrapper h4 {
+.contactsInputLinkWrapper h4 {
   margin: 20px 0 20px 0;
 }
 
-.fileInputLinkIcon {
+.contactsInputLinkIcon {
   margin-left: 15px;
 }
 
-.fileInputLink {
+.contactsInputLink {
   color: #fff;
-  width: 90%;
+  width: 100%;
   border: none;
   border-bottom: 2px solid #737373;
   background-color: #000;
@@ -22,6 +22,6 @@
   font-size: 18px;
 }
 
-.fileInputLink:focus {
+.contactsInputLink:focus {
   outline: none;
 }
