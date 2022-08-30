@@ -13,3 +13,8 @@ export interface AdData {
     title: string,
     description: string,
 }
+
+export interface ReportVideo {
+    date: string,
+    urlVideo: string[],
+}

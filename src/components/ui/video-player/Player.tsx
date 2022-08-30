@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactPlayer from "react-player";
 
-const Player = () => {
+const Player = ({urlVideo}: {urlVideo: string}) => {
     return (
             <ReactPlayer
                 controls={true}
                 width="100%"
                 height="100%"
-
-                url='https://www.youtube.com/watch?v=-7asGU6mWYI' />
+                url={urlVideo} />
     );
 };
 
