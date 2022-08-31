@@ -16,5 +16,6 @@ export interface AdData {
 
 export interface ReportVideo {
     date: string,
+    views: number,
     urlVideo: string[],
 }

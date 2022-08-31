@@ -11,29 +11,20 @@ const VideoPage = () => {
     const videoReports: ReportVideo[] = [
         {
             date: '1 мая 2018',
-            urlVideo: ['http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                        'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
+            views: 500,
+            urlVideo: ['https://www.ts.kg/ololo/2de0b9ba175abc038c639b5f1d7abc94c060ed09.mp4',
                 ]
         },
         {
             date: '24 мая 2022',
-            urlVideo: ['http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5'
+            views: 500,
+            urlVideo: ['https://www.ts.kg/ololo/2de0b9ba175abc038c639b5f1d7abc94c060ed09.mp4'
             ]
         },
         {
             date: '15 марта 2018',
-            urlVideo: ['http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
-                'http://download.files.namba.kg/files/5c1a231e76ba6fd8736b29e1d4531ff2/630c7934/186814222/file.mp4?oLsFueBr8gq+8fYkW1UA+vmuvYSTRjRTrvFPh/EodNMPBjMuwrL5',
+            views: 500,
+            urlVideo: ['https://www.ts.kg/ololo/2de0b9ba175abc038c639b5f1d7abc94c060ed09.mp4',
             ]
         },
     ]

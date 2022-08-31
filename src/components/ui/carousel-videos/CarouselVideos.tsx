@@ -23,7 +23,7 @@ const CarouselVideos = ({videoReports}: { videoReports: ReportVideo[] }) => {
                 >
                     {report.urlVideo.map(video =>(
                         <SwiperSlide>
-                            <Player urlVideo={video}></Player>
+
                         </SwiperSlide>
                     ))}
                 </Swiper>
