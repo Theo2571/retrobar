@@ -2,16 +2,30 @@
   max-height: 251px;
   width: 100%;
   background: transparent;
-  margin: 0 auto 150px;
+  margin: 0 auto 50px;
 
   & .swiper-slide {
+    position: relative;
     text-align: center;
     font-size: 0;
     background: #fff;
-    max-width: 463px;
+    max-width: 436px;
+    min-width: 300px;
+    max-height: 251px;
     border-radius: 10px;
     overflow: hidden;
     margin: 0 10px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 24px;
+      width: 21px;
+      top: 20px;
+      right: 30px;
+      background: url("../../../assets/icons/play_icon_small.svg") no-repeat;
+      z-index: 10;
+    }
 
 
     /* Center slide text vertically */
@@ -86,5 +100,7 @@
   font-size: 32px;
   line-height: 39px;
   color: #EBEBEB;
-  padding-left: 25%;
+  max-width: 922px;
+  padding-top: 30px;
+  margin: 0 auto 30px;
 }

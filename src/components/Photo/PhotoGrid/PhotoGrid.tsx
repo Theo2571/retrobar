@@ -1,7 +1,7 @@
 import React from 'react';
 import './PhotoGrid.scss';
 import {AdData, PlaceData} from '../../../types/types';
-import image from '../../../assets/PhotoPage/modalPhoto.png';
+import image from '../../../assets/PhotoPage/test.png';
 import image1 from '../../../assets/PhotoPage/photo1.png';
 import image2 from '../../../assets/PhotoPage/photo2.png';
 import image3 from '../../../assets/PhotoPage/photo3.png';

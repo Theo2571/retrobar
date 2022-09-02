@@ -7,9 +7,9 @@
   cursor: pointer;
 
   &__image {
-    display: block;
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 100%;
     mix-blend-mode: exclusion;
   }
 

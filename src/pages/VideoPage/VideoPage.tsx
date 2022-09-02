@@ -7,37 +7,95 @@ import CarouselVideos from "../../components/ui/carousel-videos/CarouselVideos";
 
 const VideoPage = () => {
 
-
     const videoReports: ReportVideo[] = [
         {
-            date: '1 мая 2018',
             views: 500,
-            urlVideo: ['https://www.ts.kg/ololo/2de0b9ba175abc038c639b5f1d7abc94c060ed09.mp4',
-                ]
+            id: 1,
+            eventName: "Miygi & Endi Panda",
+            date: "2022-05-05T00:00:00.000Z",
+            link: "www.instagram.com/paparouz/",
+            eventVideos: [
+            "./src/files/event-video/eventvideos-2022-08-30T18:16:26+06:00-Короткое видео для души.mp4"
+        ],
+            preview: [
+            "./src/files/preview/preview-2022-08-30T18:16:26+06:00-tree-736885_1280.jpeg"
+        ],
+            "pubId": 1,
+            "photographerId": 1
         },
         {
-            date: '24 мая 2022',
             views: 500,
-            urlVideo: ['https://www.ts.kg/ololo/2de0b9ba175abc038c639b5f1d7abc94c060ed09.mp4'
-            ]
+            id: 2,
+            eventName: "Miygi & Endi Panda",
+            date: "2022-05-05T00:00:00.000Z",
+            link: "www.instagram.com/paparouz/",
+            eventVideos: [
+            "./src/files/event-video/eventvideos-2022-08-30T18:16:26+06:00-Короткое видео для души.mp4"
+        ],
+            preview: [
+            "./src/files/preview/preview-2022-08-30T18:16:26+06:00-tree-736885_1280.jpeg"
+        ],
+            "pubId": 1,
+            "photographerId": 1
         },
         {
-            date: '15 марта 2018',
             views: 500,
-            urlVideo: ['https://www.ts.kg/ololo/2de0b9ba175abc038c639b5f1d7abc94c060ed09.mp4',
-            ]
+            id: 3,
+            eventName: "Miygi & Endi Panda",
+            date: "2022-05-05T00:00:00.000Z",
+            link: "www.instagram.com/paparouz/",
+            eventVideos: [
+            "./src/files/event-video/eventvideos-2022-08-30T18:16:26+06:00-Короткое видео для души.mp4"
+        ],
+            preview: [
+            "./src/files/preview/preview-2022-08-30T18:16:26+06:00-tree-736885_1280.jpeg"
+        ],
+            "pubId": 1,
+            "photographerId": 1
+        },
+        {
+            views: 500,
+            id: 4,
+            eventName: "Miygi & Endi Panda",
+            date: "2022-05-05T00:00:00.000Z",
+            link: "www.instagram.com/paparouz/",
+            eventVideos: [
+            "./src/files/event-video/eventvideos-2022-08-30T18:16:26+06:00-Короткое видео для души.mp4"
+        ],
+            preview: [
+            "./src/files/preview/preview-2022-08-30T18:16:26+06:00-tree-736885_1280.jpeg"
+        ],
+            "pubId": 1,
+            "photographerId": 1
+        },
+        {
+            views: 500,
+            id: 5,
+            eventName: "Miygi & Endi Panda",
+            date: "2022-05-05T00:00:00.000Z",
+            link: "www.instagram.com/paparouz/",
+            eventVideos: [
+            "./src/files/event-video/eventvideos-2022-08-30T18:16:26+06:00-Короткое видео для души.mp4"
+        ],
+            preview: [
+            "./src/files/preview/preview-2022-08-30T18:16:26+06:00-tree-736885_1280.jpeg"
+        ],
+            "pubId": 1,
+            "photographerId": 1
         },
     ]
 
     return (
         <div className={styles.container}>
-            <div className={styles.player_wrapper}>
+                <div className={styles.player_wrapper}>
                 <Player urlVideo="https://www.youtube.com/watch?v=H5v3kku4y6Q&list=PLDIoUOhQQPlXr63I_vwF9GD8sAKh77dWU"/>
             </div>
-            <div className={styles.video_reports}>
-                <CarouselVideos videoReports={videoReports}/>
-            </div>
-            <LowerBlock/>
+                <div className={styles.video_reports}>
+                    <CarouselVideos videoReports={videoReports}/>
+                    <CarouselVideos videoReports={videoReports}/>
+                    <CarouselVideos videoReports={videoReports}/>
+                </div>
+                <LowerBlock/>
           </div>
     );
 };

@@ -4,7 +4,7 @@ $path: "../../../../src/assets/PhotoPage";
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 367px;
-  grid-gap: 7px;
+  grid-gap: 10px;
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 50%);
   }
@@ -145,7 +145,7 @@ $path: "../../../../src/assets/PhotoPage";
   background-size: cover;
   @media (max-width: 900px) {
     grid-column: 1 / 2;
-    grid-row: 7 / 8;
+    grid-row: 6 / 7;
   }
   @media (max-width: 756px) {
     display: none;
@@ -173,7 +173,7 @@ $path: "../../../../src/assets/PhotoPage";
   background-size: cover;
   @media (max-width: 900px) {
     grid-column: 2 / 3;
-    grid-row: 7 / 9;
+    grid-row: 6 / 8;
   }
   @media (max-width: 756px) {
     display: none;
@@ -188,6 +188,9 @@ $path: "../../../../src/assets/PhotoPage";
   @media (max-width: 900px) {
     grid-column: 1 / 2;
     grid-row: 7 / 8;
+  }
+  @media (max-width: 756px) {
+    display: none;
   }
 }
 
