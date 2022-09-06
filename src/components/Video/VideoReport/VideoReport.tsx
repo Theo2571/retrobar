@@ -5,9 +5,7 @@ import { useNavigate } from "react-router-dom"
 import {VIDEO_PLAYER_PAGE} from "../../../consts/consts";
 
 const VideoReport = () => {
-
     const navigate = useNavigate();
-
     const data =
         {
             views: 500,

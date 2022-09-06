@@ -80,34 +80,8 @@
     display: flex;
     justify-content: space-between;
 
-    &_photos-amount {
-    }
 
     &_btn-group {
-
-
-      &__share {
-        position: relative;
-        background: transparent;
-        border: none;
-        color: white;
-        width: 158px;
-        height: 44px;
-        padding-right: 30px;
-        margin-right: 20px;
-
-        &::before {
-          content: '';
-          position: absolute;
-          top: 50%;
-          right: 0;
-          transform: translateY(-50%);
-          width: 18px;
-          height: 20px;
-          background: url('../../../assets/icons/share.svg') no-repeat;
-          background-size: cover;
-        }
-      }
 
       &__download {
         position: relative;

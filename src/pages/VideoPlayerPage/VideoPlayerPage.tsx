@@ -2,11 +2,13 @@ import React from 'react';
 import Player from "../../components/ui/video-player/Player";
 import preview from "../../assets/VideoPage/video-preview-lg.png";
 import {useParams} from "react-router-dom";
+import TitleForPages from "../../components/ui/title-for-pages/titleForPages";
+import styles from "./VideoPlayerPage.module.scss"
+import ShareButton from "../../components/ui/share-button/ShareButton";
 
 const VideoPlayerPage = () => {
-
     const {id} = useParams()
-    console.log(id)
+
     const videoReport =  {
             views: 500,
             id: 5,
@@ -24,8 +26,10 @@ const VideoPlayerPage = () => {
         }
 
     return (
-        <div>
+        <div className={styles.videoPlayer}>
+            <TitleForPages title="Title name"/>
             <Player videoReport={videoReport} />
+            <ShareButton/>
         </div>
     );
 };

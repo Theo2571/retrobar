@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './ModalWindow.scss'
 import {PlaceData} from "../../../types/types";
 import Carousel from "../carousel-photos/Carousel";
+import ShareButton from "../share-button/ShareButton";
 
 const ModalWindow = ({active , setActive, data}: {
     active: boolean,
@@ -36,7 +37,7 @@ const ModalWindow = ({active , setActive, data}: {
                         <span className="">{slideNumber + ' из ' + data.photos.length}</span>
                     </div>
                     <div className="modal_footer_btn-group">
-                        <button className="modal_footer_btn-group__share">Поделиться</button>
+                        <ShareButton/>
                         <button className="modal_footer_btn-group__download">Скачать</button>
                     </div>
                 </div>
