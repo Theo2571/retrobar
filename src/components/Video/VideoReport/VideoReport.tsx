@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './VideoReport.module.scss';
-import image from '../../../assets/PhotoPage/photo2.png'
+import image from '../../../assets/PhotoPage/photo2.png';
+import { useNavigate } from "react-router-dom"
+import {VIDEO_PLAYER_PAGE} from "../../../consts/consts";
 
 const VideoReport = () => {
+
+    const navigate = useNavigate();
 
     const data =
         {
@@ -22,7 +26,7 @@ const VideoReport = () => {
         }
 
     return (
-        <div className={styles.container_videoReport}>
+        <div className={styles.container_videoReport} onClick={() => navigate( VIDEO_PLAYER_PAGE.replace(':id', `${data.id}`), )}>
             <img className={styles.container_videoReport__prevImage} src={data.preview[0]} alt={data.eventName}/>
             <div className={styles.container_videoReport__information}>
                 <span>{data.views}</span>

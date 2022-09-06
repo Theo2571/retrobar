@@ -30,7 +30,6 @@ const CarouselVideos = ({videoReports}: { videoReports: ReportVideo[] }) => {
                             <VideoReport/>
                         </SwiperSlide>
                     ))}
-
                 </Swiper>
             </div>
         </>

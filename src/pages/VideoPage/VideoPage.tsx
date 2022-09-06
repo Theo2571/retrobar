@@ -4,22 +4,24 @@ import Player from "../../components/ui/video-player/Player";
 import styles from "./VideoPage.module.scss"
 import {ReportVideo} from "../../types/types";
 import CarouselVideos from "../../components/ui/carousel-videos/CarouselVideos";
+import preview from "../../assets/VideoPage/video-preview-lg.png"
+
 
 const VideoPage = () => {
 
     const videoReports: ReportVideo[] = [
         {
             views: 500,
-            id: 1,
+            id: 5,
             eventName: "Miygi & Endi Panda",
             date: "2022-05-05T00:00:00.000Z",
             link: "www.instagram.com/paparouz/",
             eventVideos: [
-            "./src/files/event-video/eventvideos-2022-08-30T18:16:26+06:00-Короткое видео для души.mp4"
-        ],
+                "https://www.youtube.com/watch?v=WVGChZZfvbQ"
+            ],
             preview: [
-            "./src/files/preview/preview-2022-08-30T18:16:26+06:00-tree-736885_1280.jpeg"
-        ],
+                preview
+            ],
             "pubId": 1,
             "photographerId": 1
         },
@@ -78,7 +80,7 @@ const VideoPage = () => {
             "./src/files/event-video/eventvideos-2022-08-30T18:16:26+06:00-Короткое видео для души.mp4"
         ],
             preview: [
-            "./src/files/preview/preview-2022-08-30T18:16:26+06:00-tree-736885_1280.jpeg"
+            preview
         ],
             "pubId": 1,
             "photographerId": 1
@@ -88,7 +90,7 @@ const VideoPage = () => {
     return (
         <div className={styles.container}>
                 <div className={styles.player_wrapper}>
-                <Player urlVideo="https://www.youtube.com/watch?v=H5v3kku4y6Q&list=PLDIoUOhQQPlXr63I_vwF9GD8sAKh77dWU"/>
+                <Player videoReport={videoReports[0]}/>
             </div>
                 <div className={styles.video_reports}>
                     <CarouselVideos videoReports={videoReports}/>

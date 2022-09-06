@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import ReactPlayer from "react-player";
 import styles from './Player.module.scss'
-import preview from '../../../assets/VideoPage/video-preview-lg.png'
+import {ReportVideo} from "../../../types/types";
 
-const Player = ({urlVideo}: {urlVideo: string}) => {
+const Player = ({videoReport}: {videoReport: ReportVideo}) => {
 
     const [play, setPlay] = useState(false);
 
@@ -14,13 +14,13 @@ const Player = ({urlVideo}: {urlVideo: string}) => {
                 width="100%"
                 height="100%"
                 style={{minHeight: "263px"}}
-                url={urlVideo}
+                url={videoReport.eventVideos[0]}
                 playing={play}
                 playIcon={<button
                     className={styles.btn_play}
                     onClick={()=> setPlay(true)}
                 />}
-                light={preview}
+                light={videoReport.preview[0]}
             ></ReactPlayer>
         </>
 

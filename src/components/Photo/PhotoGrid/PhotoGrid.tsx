@@ -45,6 +45,7 @@ const PhotoGrid = () => {
         data,
     ]
 
+
     let classNameItem = "grid_item grid_item_";
 
     return (
