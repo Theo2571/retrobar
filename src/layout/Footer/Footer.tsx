@@ -5,7 +5,7 @@ import search from '../../assets/icons/search.svg'
 import telegram from '../../assets/icons/telegram.svg'
 import youtube from '../../assets/icons/youtube.svg'
 import instagram from '../../assets/icons/instagram.svg'
-import SearchInput from "../SearchInput/SearchInput";
+import SearchForm from "../search-form/SearchForm";
 import {NavLink} from "react-router-dom";
 
 
@@ -57,12 +57,21 @@ const Footer = () => {
                 <div className={styles.footer__inner}>
                     <div className={styles.footer__retro}>
                         <img className={styles.footer__logo} src={logo} alt="logo"/>
+                        <h4 className={styles.social__title__none}>
+                            Мы в социальных сетях:
+                        </h4>
+                        <div className={styles.social__images__none}>
+                            <img src={telegram} alt=""/>
+                            <img src={instagram} alt=""/>
+                            <img src={youtube} alt=""/>
+                        </div>
+
                         <div className={styles.footer__descr}>
-                            <p>Политика конфиденциальности</p>
-                            <p>
-                                Copyright © 2021 <br/>
-                                Digital-агентство «Active Trust»
+                            <span className={styles.footer__descr__title}>Политика конфиденциальности</span>
+                            <p className={styles.footer__descr__copy}>
+                                Copyright © 2021
                             </p>
+                            <p>Digital-агентство «Active Trust»</p>
                         </div>
                     </div>
                     <nav className={styles.footer__navbar}>
@@ -85,7 +94,7 @@ const Footer = () => {
                     </nav>
                     <div className={styles.footer__social}>
                         <div className={styles.footer__search_form}>
-                            <SearchInput width={'223px'} placeholder={'Геолокация'} open={true}/>
+                            <SearchForm className={styles.footer__search__input}/>
                         </div>
                         <h4 className={styles.social__title}>
                             Мы в социальных сетях:
@@ -94,6 +103,13 @@ const Footer = () => {
                             <img src={telegram} alt=""/>
                             <img src={instagram} alt=""/>
                             <img src={youtube} alt=""/>
+                        </div>
+                        <div className={styles.footer__descr__none}>
+                            <span className={styles.footer__descr__title__none}>Политика конфиденциальности</span>
+                            <p className={styles.footer__descr__copy__none}>
+                                Copyright © 2021
+                            </p>
+                            <p>Digital-агентство «Active Trust»</p>
                         </div>
                     </div>
                 </div>

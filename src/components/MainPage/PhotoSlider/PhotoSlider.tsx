@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import './PhotoSlider.scss'
+import './PhotoSlider.css'
 import styles from './PhotoSlider.module.scss'
 
 // import required modules
@@ -75,7 +75,7 @@ const PhotoSlider = () => {
                 }}
                 pagination={pagination}
                 modules={[EffectCoverflow, Pagination]}
-                className={styles.mySwiper}
+                className="mySwiper"
             >
                 {
                     data.map((item, index) => (

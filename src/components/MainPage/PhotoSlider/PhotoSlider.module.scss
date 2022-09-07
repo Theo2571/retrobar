@@ -9,7 +9,7 @@
 
     &__title {
       position: absolute;
-      bottom: -79px;
+      bottom: -60px;
       left: 15px;
       font-weight: 700;
       font-size: 22px;
@@ -19,7 +19,7 @@
 
     &__text {
       position: absolute;
-      bottom: -113px;
+      bottom: -90px;
       left: 15px;
       font-weight: 600;
       font-size: 18px;
@@ -30,11 +30,63 @@
     &__date {
       position: absolute;
       right: 10px;
-      bottom: -96px;
+      bottom: -87px;
       font-weight: 600;
       font-size: 16px;
       line-height: 20px;
       color: #000000;
+    }
+  }
+}
+@media screen and (max-width: 1025px){
+  .card {
+    position: relative;
+    margin: 20px auto;
+
+    .card__frame_ramka {
+      width: 440px !important;
+      height: 550px !important;
+    }
+
+    &__about {
+      position: absolute;
+      top: 33px;
+      left: 12px;
+
+      &__photo {
+        width: 410px !important;
+        height: 405px !important;
+      }
+
+      &__title {
+        position: absolute;
+        bottom: -70px;
+        left: 15px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+      }
+
+      &__text {
+        position: absolute;
+        bottom: -95px;
+        left: 15px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 23px;
+        color: #000000;
+      }
+
+      &__date {
+        position: absolute;
+        right: 10px;
+        bottom: -80px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+      }
     }
   }
 }
@@ -210,7 +262,7 @@
 
     &__about {
       position: absolute;
-      top: 22px;
+      top: 23px;
       left: 7px;
 
       &__photo {

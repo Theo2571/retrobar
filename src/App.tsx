@@ -1,16 +1,19 @@
 import React from 'react';
 import MainRoutes from './routes/routes';
 import Header from "./layout/Header/Header";
-import Footer from "./layout/Footer/Footer";
+import { useLocation } from 'react-router-dom';
 
 function App() {
-    return (
-        <div className="app">
-            <Header/>
-            <MainRoutes/>
-            {/*<Footer/>*/}
-        </div>
-    );
+
+  const { pathname } = useLocation();
+  const shouldShow = pathname.split("/")[1] !== "admin";
+
+  return (
+    <>
+      {shouldShow && <Header />}
+      <MainRoutes />
+    </>
+  );
 }
 
 export default App;

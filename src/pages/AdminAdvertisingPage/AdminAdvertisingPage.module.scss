@@ -1,0 +1,47 @@
+.main_container {
+  width:  1440px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+.advertising_content {
+  display: flex;
+  justify-content: space-around;
+  width: 84%;
+}
+
+.content_fileInput {
+  width: 45%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.fileInputTitleWrapper {
+  margin: 30px 0;
+}
+
+.fileInputTitle {
+  margin-left: 3%;
+  font-size: 32px;
+  color: #FFB03B;
+
+  &2 {
+    font-size: 28px;
+    color: #999999;
+  }
+}
+
+.content_textInputs {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  color: #FFB03B;
+  margin: 7% 10% 0 5%;
+  justify-content: flex-start;
+  font-size: 22px;
+}

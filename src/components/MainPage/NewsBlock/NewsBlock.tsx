@@ -34,18 +34,6 @@ const NewsBlock = () => {
                             <div className={styles.news__image}>
                                 <div className={styles.news__polaroid_one}>
                                     <img src={item.frame} alt="polaroid"/>
-                                    <div className={styles.news__polaroid_two}>
-                                        <img src={item.photo} alt="photo"/>
-                                    </div>
-                                    <div className={styles.news__tape_one}>
-                                        <img src={tape1} alt="tape1"/>
-                                    </div>
-                                    <div className={styles.news__tape_two}>
-                                        <img src={tape2} alt="tape2"/>
-                                    </div>
-                                    <div className={styles.news__tape_three}>
-                                        <img src={tape3} alt="tape3"/>
-                                    </div>
                                 </div>
                             </div>
                         </div>

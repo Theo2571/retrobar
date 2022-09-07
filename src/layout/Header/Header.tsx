@@ -4,7 +4,7 @@ import search from '../../assets/icons/search.svg'
 import star from '../../assets/icons/bigstarburger.svg'
 import {NavLink} from "react-router-dom";
 import styles from './Header.module.scss'
-import SearchInput from "../SearchInput/SearchInput";
+import SearchForm from "../search-form/SearchForm";
 import {FcMenu} from "react-icons/all";
 import HamburgerMenu from "./components/HamburgerMenu";
 
@@ -63,7 +63,7 @@ const Header = () => {
                     </nav>
                 </div>
                 <div className={styles.search__input}>
-                    <SearchInput open={open} width={"360px"} placeholder={'поиск'}/>
+                    {open && <SearchForm className={styles.search__form}/>}
                 </div>
             </div>
         </header>
