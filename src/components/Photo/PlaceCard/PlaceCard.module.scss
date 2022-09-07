@@ -1,10 +1,10 @@
 .place_card {
-  position: relative;
   color: #fff;
   margin: 0;
   height: 100%;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
 
   &__image {
     object-fit: cover;
@@ -20,7 +20,7 @@
     height: 143px;
     border-radius: 8px;
     bottom: 0;
-    padding-bottom: 15px;
+    padding: 0 0 15px;
   }
 }
 
