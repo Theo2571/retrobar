@@ -10,7 +10,7 @@ const TextInput: FC<TextInputProps> = ({title}) => {
     <div className={styles.textInputs}>
       <h2 className={styles.textInputsTitle}>{title}</h2>
       <input type="text" className={styles.textInput} />
-  </div>
+    </div>
   );
 };
 

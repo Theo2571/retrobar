@@ -15,21 +15,21 @@ const AdminPhotoPage = () => {
   const date = "Дата";
 
   return (
-      <div className={styles.body}>
-        <div className={styles.main_container}>
-          <AdminNavbar />
-          <div className={styles.photo_content}>
-            <div className={styles.content_fileInput}>
-              <div className={styles.fileInputTitleWrapper}>
-                <h2 className={styles.fileInputTitle}>{title}</h2>
-              </div>
-              <FileInput title={title} fileIcon={fileIcon} addFileTitle={addFileTitle} />
-              <FileInputLink />
+    <div className={styles.body}>
+      <div className={styles.main_container}>
+        <AdminNavbar />
+        <div className={styles.photo_content}>
+          <div className={styles.content_fileInput}>
+            <div className={styles.fileInputTitleWrapper}>
+              <h2 className={styles.fileInputTitle}>{title}</h2>
             </div>
-            <InputArea institutionName={institutionName} partyName={partyName} job={job} date={date} />
+            <FileInput title={title} fileIcon={fileIcon} addFileTitle={addFileTitle} />
+            <FileInputLink />
           </div>
+          <InputArea institutionName={institutionName} partyName={partyName} job={job} date={date} />
         </div>
       </div>
+    </div>
   );
 };
 

@@ -8,6 +8,28 @@ body {
   background-color: #000;
   font-size: 16px;
   font-family: 'Montserrat Alternates', sans-serif;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Mont, sans-serif";
+  src: url('assets/fonts/Mont Font Family/Fontfabric - Mont ExtraLight DEMO.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Mont, sans-serif";
+  src: url('assets/fonts/Mont Font Family/Fontfabric - Mont Heavy DEMO.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Mont, sans-serif";
+  src: url('assets/fonts/Mont Font Family/MontSemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
 }
 
 code {
