@@ -24,6 +24,7 @@ import AdminPhotoPage from "../pages/AdminPhotoPage/AdminPhotoPage";
 import AdminPosterPage from "../pages/AdminPosterPage/AdminPosterPage";
 import AdminVideoPage from "../pages/AdminVideoPage/AdminVideoPage";
 import PhotoPage from "../pages/PhotoPage/PhotoPage";
+import MainPage from "../pages/MainPage/MainPage";
 import {useId} from "react";
 import VideoPage from "../pages/VideoPage/VideoPage";
 import VideoPlayerPage from "../pages/VideoPlayerPage/VideoPlayerPage";
@@ -34,7 +35,7 @@ const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     {
       path: MAIN_PAGE,
-      Component: <></>,
+      Component: <MainPage />,
       id: useId(),
     },
     {
