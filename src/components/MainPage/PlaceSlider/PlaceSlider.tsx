@@ -88,6 +88,7 @@ const PlaceSlider = () => {
 
     return (
         <div className={styles.place__parent}>
+            <h3 className={styles.place_parent_title}>Заведения</h3>
             <Swiper
                 loop={true}
                 initialSlide={1}

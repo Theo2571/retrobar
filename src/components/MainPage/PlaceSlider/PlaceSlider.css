@@ -2,7 +2,6 @@
 
 .placeSwiper {
     width: 100%;
-    padding-top: 15%;
 }
 
 .placeSwiper .swiper-slide {
@@ -37,18 +36,18 @@
     filter: opacity(100%);
     /*transition-duration: 0ms;*/
     z-index: 1;
-    transform: translate3d(-50px, 0px, 80px) rotateX(0deg) rotateY(0deg) scale(0.9) rotate(0deg) !important;
+    transform: translate3d(-120px, 0px, 80px) rotateX(0deg) rotateY(0deg) scale(0.9) rotate(0deg) !important;
 }
 
 .placeSwiper .swiper-slide-next {
     filter: opacity(75%);
-    transform: translate3d(-25px, 10px, 0px) rotateX(0deg) rotateZ(8deg) scale(0.8) rotate(-8deg) !important;
+    transform: translate3d(-55px, 10px, 0px) rotateX(0deg) rotateZ(8deg) scale(0.8) rotate(-8deg) !important;
 }
 
 .placeSwiper .swiper-slide-prev {
     /*opacity: 0.7 !important;*/
     filter: opacity(75%);
-    transform: translate3d(35px, -5px, 0) rotateX(0deg) rotateZ(-11deg) scale(0.7) rotate(10deg) !important;
+    transform: translate3d(-35px, -5px, 0) rotateX(0deg) rotateZ(-11deg) scale(0.7) rotate(10deg) !important;
 }
 
 
@@ -56,9 +55,9 @@
 
 
     .placeSwiper {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        /*width: 100%;*/
+        /*padding-top: 160px;*/
+        /*padding-bottom: 50px;*/
     }
 
     .placeSwiper .swiper-slide {
@@ -103,8 +102,8 @@
 
     .placeSwiper {
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        /*padding-top: 50px;*/
+        /*padding-bottom: 50px;*/
     }
 
     .placeSwiper .swiper-slide {
@@ -149,8 +148,8 @@
 
     .placeSwiper {
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        /*padding-top: 50px;*/
+        /*padding-bottom: 50px;*/
     }
 
     .placeSwiper .swiper-slide {
@@ -195,8 +194,8 @@
 
     .placeSwiper {
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        /*padding-top: 10px;*/
+        /*padding-bottom: 10px;*/
     }
 
     .placeSwiper .swiper-slide {
@@ -241,8 +240,8 @@
 
     .placeSwiper {
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        /*padding-top: 50px;*/
+        /*padding-bottom: 50px;*/
     }
 
     .placeSwiper .swiper-slide {
@@ -287,8 +286,8 @@
 
     .placeSwiper {
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        /*padding-top: 50px;*/
+        /*padding-bottom: 50px;*/
     }
 
     .placeSwiper .swiper-slide {
@@ -332,8 +331,8 @@
 
     .placeSwiper {
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        /*padding-top: 50px;*/
+        /*padding-bottom: 50px;*/
     }
 
     .placeSwiper .swiper-slide {

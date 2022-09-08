@@ -13,6 +13,12 @@ ul {
   list-style: none;
 }
 
+.photo_report_wrapper {
+  background-image: url('../../../assets/icons/bggrid.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .photo_report_title {
   margin: 0 auto;
   max-width: 1014px;

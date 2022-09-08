@@ -31,11 +31,7 @@ const NewsBlock = () => {
                                 <p className={styles.news__text}>{item.text}</p>
                                 <span className={styles.news__date}>{item.date}</span>
                             </div>
-                            <div className={styles.news__image}>
-                                <div className={styles.news__polaroid_one}>
-                                    <img src={item.frame} alt="polaroid"/>
-                                </div>
-                            </div>
+                                <img className={styles.news__polaroid} src={item.frame} alt="polaroid"/>
                         </div>
                     )
                 })}

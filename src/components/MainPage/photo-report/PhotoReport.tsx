@@ -24,7 +24,7 @@ const PhotoReport = () => {
 
 
     return (
-        <div>
+        <div className="photo_report_wrapper">
             <h1 className="photo_report_title">Актуальные фотоотчёты</h1>
             <div className="wrapper">
                 <div className="grid__item1">

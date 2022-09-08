@@ -12,9 +12,11 @@ import TitleForPages from "../../components/ui/title-for-pages/titleForPages";
 const MainPage = () => {
     return (
         <div className={styles.MainPage}>
-            <PhotoReport />
-            <PhotoSlider />
-            <BarSlider />
+            <div className={styles.div}>
+                <PhotoSlider />
+                <BarSlider />
+            </div>
+            {/*<PhotoReport />*/}
             <Institution />
             <OrderForPages />
             <Footer />
